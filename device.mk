@@ -82,6 +82,7 @@ PRODUCT_PACKAGES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     vendor.qti.hardware.capabilityconfigstore@1.0
 
 # Cryptfs
@@ -92,6 +93,10 @@ PRODUCT_PACKAGES += \
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+    XiaomiParts
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-parts.xml
 
 # Display
 PRODUCT_PACKAGES += \
@@ -242,7 +247,6 @@ PRODUCT_PACKAGES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-=======
 # WFD
 PRODUCT_PACKAGES += \
     libaacwrapper \
