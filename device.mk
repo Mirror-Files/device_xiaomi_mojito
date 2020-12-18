@@ -111,6 +111,7 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Display/Graphics
 PRODUCT_PACKAGES += \
     libdisplayconfig \
+    libqdMetaData \
     libqdMetaData.system
 
 # Fastbootd
