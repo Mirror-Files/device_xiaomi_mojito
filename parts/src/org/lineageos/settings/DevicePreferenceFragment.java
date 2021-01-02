@@ -23,6 +23,9 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.provider.Settings;
 import android.widget.Toast;
+
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.ListPreference;
@@ -91,6 +94,20 @@ public class DevicePreferenceFragment extends PreferenceFragment {
                             OVERLAY_NO_FILL_PACKAGE, !(boolean) value, 0);
                     } catch (RemoteException e) {
                         // We can do nothing
+                    if (KEY_MIN_REFRESH_RATE.equals(key)) {
+                        RefreshRateUtils.setRefreshRate(getActivity(), Integer.parseInt((String) value));
+                        RefreshRateUtils.setFPS(Integer.parseInt((String) value));
+                        int MinRefreshRateIndex = mPrefMinRefreshRate
+                                .findIndexOfValue((String) value);
+                        mPrefMinRefreshRate
+                                .setSummary(mPrefMinRefreshRate.getEntries()[MinRefreshRateIndex]);
+                    } else if (KEY_PILL_STYLE_NOTCH.equals(key)) {
+                        try {
+                            mOverlayService.setEnabled(
+                                    OVERLAY_NO_FILL_PACKAGE, !(boolean) value, 0);
+                        } catch (RemoteException e) {
+                            // We can do nothing
+                        }
                     }
                     Toast.makeText(getContext(),
                         R.string.msg_device_need_restart, Toast.LENGTH_SHORT).show();
