@@ -45,11 +45,14 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             // Ignore
         }
 
-        // Doze
+        // Dirac
         DiracUtils.initialize(context);
+
+        // Doze
         DozeUtils.checkDozeService(context);
-        // Force apply our default value for doze if it is not set.
         DozeUtils.enableDoze(context, DozeUtils.isDozeEnabled(context));
+
+        // Thermal Profiles
         ThermalUtils.initialize(context);
     }
 }
