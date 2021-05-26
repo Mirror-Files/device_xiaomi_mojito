@@ -194,7 +194,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.mojito
+    android.hardware.power-service.mojito \
+    android.hardware.power.stats@1.0-service.mock
 
 # Telephony
 PRODUCT_PACKAGES += \
