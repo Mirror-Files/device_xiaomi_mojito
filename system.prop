@@ -28,7 +28,7 @@ persist.vendor.cp.taper_term_mv=6500
 persist.vendor.cne.feature=1
 
 # Display
-debug.sf.enable_hwc_vds=1
+debug.sf.disable_hwc_vds=1
 debug.sf.latch_unsignaled=1
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_HDR_display=true
