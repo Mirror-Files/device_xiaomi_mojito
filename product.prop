@@ -31,3 +31,7 @@ ro.telephony.default_network=22,20
 
 # Zygote Preforking
 persist.device.config.runtime_native.uasp_pool_enabled=true
+
+# Priv-app permission
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.control_privapp_permissions=log
