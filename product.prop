@@ -1,3 +1,11 @@
+# ADB On Boot
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
+persist.service.debuggable=1
+persist.service.adb.enable=1
+persist.sys.usb.config=adb
+
 # Audio
 audio.sys.noisy.broadcast.delay=500
 audio.sys.mute.latency.factor=2
