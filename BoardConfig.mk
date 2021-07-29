@@ -162,13 +162,6 @@ TARGET_USES_MKE2FS := true
 # RenderScript
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    system/lib/libcameraservice.so|libmedia_jni_shim.so
-
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
-
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 

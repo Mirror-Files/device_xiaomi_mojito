@@ -86,10 +86,6 @@ PRODUCT_PACKAGES += \
 
 # Cryptfs
 PRODUCT_PACKAGES += \
-	libmedia_jni_shim
-
-# Device Settings
-PRODUCT_PACKAGES += \
     libcryptfs_hw \
     vendor.qti.hardware.cryptfshw@1.0
 
