@@ -35,8 +35,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Build Fingerprint
 BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys"
 
-
-
 # Spark
-
-SPARK_BUILD_TYPE := UNOFFICIAL
+SPARK_BUILD_TYPE := OFFICIAL
