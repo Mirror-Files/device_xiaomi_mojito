@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_mojito.mk
+    $(LOCAL_DIR)/potato_mojito.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_mojito-user \
-    spark_mojito-userdebug \
-    spark_mojito-eng
+    potato_mojito-user \
+    potato_mojito-userdebug \
+    potato_mojito-eng
